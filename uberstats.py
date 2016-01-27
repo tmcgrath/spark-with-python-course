@@ -27,8 +27,4 @@ if __name__ == "__main__":
                     sum(`trips`) as cnt from uber group by `dispatching_base_number` 
                     order by cnt desc""").show()
 
-    # output = counts.collect()
-    # for (word, count) in output:
-    #     print("%s: %i" % (word, count))
-
     sc.stop()
